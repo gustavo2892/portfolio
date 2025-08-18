@@ -1,8 +1,9 @@
 import { i18n, type Locale } from "../../i18n-config";
+import '@/styles/globals.css';
 
 export const metadata = {
-  title: "i18n within app router - Vercel Examples",
-  description: "How to do i18n in Next.js 15 within app router",
+  title: "Gustavo Vidal de Freitas",
+  description: "Portfolio",
 };
 
 export async function generateStaticParams() {
