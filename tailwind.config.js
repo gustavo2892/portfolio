@@ -1,7 +1,5 @@
 module.exports = {
-	darkMode: ['class'],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/templates/**/*.{js,ts,jsx,tsx,mdx}',
@@ -35,7 +33,7 @@ module.exports = {
           400: '#20242C',
           500: '#16181D',
           600: '#14161A',
-          700: '#101216',
+          700: '#2DEBFC',
           800: '#0B0C0F',
         },
       },
