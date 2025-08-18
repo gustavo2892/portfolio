@@ -1,11 +1,21 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Image from 'next/image';
 import Link from "next/link";
 import { i18n, type Locale } from "../../../../../i18n-config";
+import { 
+  DropdownMenu, 
+  DropdownMenuTrigger, 
+  DropdownMenuContent, 
+  DropdownMenuItem,
+} from '@/components';
 
-export default function LocaleSwitcher() {
+export const LocaleSwitcher = () => {
   const pathname = usePathname();
+
+  const currentLocale = pathname?.split("/")[1];
+
   const redirectedPathname = (locale: Locale) => {
     if (!pathname) return "/";
     const segments = pathname.split("/");
@@ -14,17 +24,23 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <div>
-      <p>Locale switcher:</p>
-      <ul>
+    <DropdownMenu>
+    	<DropdownMenuTrigger className="text-white flex flex-row justify-center gap-2 cursor-pointer outline-none">
+        <Image src={`/${currentLocale}.png`} alt="Logo site" width={22} height={16} />
+        {currentLocale?.toLocaleUpperCase()}
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="border-transparent" align="start">
         {i18n.locales.map((locale) => {
           return (
-            <li key={locale}>
-              <Link href={redirectedPathname(locale)}>{locale}</Link>
-            </li>
-          );
+            <DropdownMenuItem key={locale} className="text-white" disabled={locale === currentLocale}>
+              <Link href={redirectedPathname(locale)} className="flex flex-row justify-center gap-3">
+                <Image src={`/${locale}.png`} alt="Logo site" width={18} height={16} />
+                {locale?.toLocaleUpperCase()}
+              </Link>
+            </DropdownMenuItem>
+          )
         })}
-      </ul>
-    </div>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

@@ -1,7 +1,7 @@
 import { Inter, PT_Sans_Caption } from 'next/font/google';
 
 import { i18n, type Locale } from "../../../i18n-config";
-import { Footer, Header } from '@/components';
+import { Footer, Header, Whatsapp } from '@/components';
 import '@/styles/globals.css';
 
 export const metadata = {
@@ -40,7 +40,8 @@ export default async function Root(props: LayoutProps) {
       <body className={`${inter.className} ${ptSansCaption.className} relative flex min-h-screen flex-col bg-gray-700`}>
         <Header lang={params.lang} />
         <main className="flex-1 flex flex-col mb-12">{children}</main>
-        <Footer />
+        <Whatsapp />
+        <Footer/>
       </body>
     </html>
   );
