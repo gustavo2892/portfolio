@@ -12,7 +12,7 @@ export const ActiveLink = ({ children, href, ...rest }: ActiveLinkProps) => {
   const linkPath = typeof href === 'string' ? href : href.pathname;
   const pathname = usePathname();
   const isActive =
-    pathname === linkPath || pathname?.startsWith(`${linkPath}/`);
+    pathname === linkPath || pathname?.endsWith(`${linkPath}/`);
 
   return (
     <Link

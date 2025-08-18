@@ -1,4 +1,8 @@
 {
+  "header": {
+    "home": "Home",
+    "projects": "Projects"
+  },
   "server-component": {
     "welcome": "Welcome"
   },
