@@ -1,7 +1,7 @@
 import { Locale } from "../../../../i18n-config";
 import { ProjectsList } from './components';
 
-export default async function IndexPage(props: {
+export default async function ProjectPage(props: {
   params: Promise<{ lang: Locale }>;
 }) {
 
