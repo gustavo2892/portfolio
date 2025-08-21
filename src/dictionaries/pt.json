@@ -1,13 +1,10 @@
 {
   "header": {
     "home": "Início",
-    "projects": "Projetos"
+    "projects": "Projetos",
+    "about-me": "Sobre mim"
   },
-  "server-component": {
-    "welcome": "Bem-vindo"
-  },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "hero-section": {
+    "title": "Olá! Sou o <b>Gustavo</b>, <br/>desenvolvedor <i>front-end.</i>"
   }
 }

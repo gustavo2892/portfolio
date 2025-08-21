@@ -33,11 +33,12 @@
   --radius-sm: calc(0.5rem - 4px);
 
   --font-sans: "PT Sans Caption", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-mont: "Montserrat", sans-serif;
 
-  --text-heading-hg: 40px;
+  --text-heading-hg: 55px;
   --text-heading-hg--line-height: 120%;
-  --text-heading-hg--font-weight: 700;
+  --text-heading-hg--font-weight: 400;
+  --text-headinghg--font-family: "Montserrat";
 
   --text-heading-xl: 32px;
   --text-heading-xl--line-height: 120%;
@@ -79,7 +80,7 @@
   --text-action-md--line-height: normal;
   --text-action-md--font-weight: 500;
 
-  --text-action-sm: 14px;
+  --text-action-sm: 20px;
   --text-action-sm--line-height: normal;
   --text-action-sm--font-weight: 500;
 }

@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from 'next/image';
 import Link from "next/link";
-import { i18n, type Locale } from "../../../../../i18n-config";
+import { i18n, type Locale } from "@/i18n-config";
 import { 
   DropdownMenu, 
   DropdownMenuTrigger, 
@@ -29,7 +29,7 @@ export const LocaleSwitcher = () => {
         <Image src={`/${currentLocale}.png`} alt="Logo site" width={22} height={16} />
         {currentLocale?.toLocaleUpperCase()}
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="border-transparent" align="start">
+      <DropdownMenuContent className="border-transparent bg-secondary-100" align="start">
         {i18n.locales.map((locale) => {
           return (
             <DropdownMenuItem key={locale} className="text-secondary-200" disabled={locale === currentLocale}>

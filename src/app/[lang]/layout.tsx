@@ -1,6 +1,6 @@
-import { Inter, PT_Sans_Caption } from 'next/font/google';
+import { PT_Sans_Caption, Montserrat } from 'next/font/google';
 
-import { i18n, type Locale } from "../../../i18n-config";
+import { i18n, type Locale } from "@/i18n-config";
 import { Footer, Header, Whatsapp } from '@/components';
 import '@/styles/globals.css';
 
@@ -18,16 +18,16 @@ type LayoutProps = {
   params: Promise<{ lang: Locale }>
 };
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-inter',
-});
-
 const ptSansCaption = PT_Sans_Caption({
   subsets: ['latin'],
   weight: '700',
   variable: '--font-sans',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-mont',
 });
 
 export default async function Root(props: LayoutProps) {
@@ -37,7 +37,7 @@ export default async function Root(props: LayoutProps) {
   
   return (
     <html lang={params.lang}>
-      <body className={`${inter.className} ${ptSansCaption.className} relative flex min-h-screen flex-col bg-secondary-100`}>
+      <body className={`${ptSansCaption.className} ${montserrat.className} relative flex min-h-screen flex-col bg-secondary-100`}>
         <Header lang={params.lang} />
         <main className="flex-1 flex flex-col mb-12">{children}</main>
         <Whatsapp />
