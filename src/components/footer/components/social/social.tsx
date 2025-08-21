@@ -17,7 +17,7 @@ export const Social = () => {
         <a
           key={info.name}
           onClick={() => handleSocialView(info.url)}
-          className="w-fit md:w-full flex flex-row justify-start gap-2 text-white hover:text-blue-200 cursor-pointer"
+          className="w-fit md:w-full flex flex-row justify-start gap-2 text-white hover:text-blue-300 cursor-pointer"
         >
           {info.icon}
           <span>{info.name}</span>

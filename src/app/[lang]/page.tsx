@@ -1,4 +1,5 @@
 import { Locale } from "../../../i18n-config";
+import { Home } from '@/templates';
 
 export default async function IndexPage(props: {
   params: Promise<{ lang: Locale }>;
@@ -6,6 +7,6 @@ export default async function IndexPage(props: {
   console.log((await props.params).lang)
 
   return (
-    <div className="mt-20 text-white"/>
+    <Home />
   );
 }

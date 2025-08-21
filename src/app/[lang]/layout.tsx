@@ -37,7 +37,7 @@ export default async function Root(props: LayoutProps) {
   
   return (
     <html lang={params.lang}>
-      <body className={`${inter.className} ${ptSansCaption.className} relative flex min-h-screen flex-col bg-gray-700`}>
+      <body className={`${inter.className} ${ptSansCaption.className} relative flex min-h-screen flex-col bg-secondary-100`}>
         <Header lang={params.lang} />
         <main className="flex-1 flex flex-col mb-12">{children}</main>
         <Whatsapp />

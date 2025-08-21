@@ -9,7 +9,7 @@
   --color-white: #FFFFFF;
   --color-blue-100: #7EA4D7;
   --color-blue-200: #2C85FC;
-  --color-blue-300: #2266C1;
+  --color-blue-300: #253A8F;
   --color-blue-400: #0D284C;
 
   --color-cyan-100: #2DEBFC;
@@ -24,6 +24,9 @@
   --color-gray-600: #14161A;
   --color-gray-700: #101216;
   --color-gray-800: #0B0C0F;
+
+  --color-secondary-100: #EACDC2;
+  --color-secondary-200: #B75D69;
 
   --radius-lg: 0.5rem;
   --radius-md: calc(0.5rem - 2px);
