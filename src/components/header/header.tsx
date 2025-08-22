@@ -16,7 +16,7 @@ export const Header = async (props: {
         <div className="flex h-16 items-center justify-between">
           <Logo homeLink={`/${lang}`} />
 
-          <nav className="flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-6">
             <ActiveLink href={`/${lang}`}>{dictionary.pages.home}</ActiveLink>
             <ActiveLink href={`/${lang}/about-me`}>{dictionary.pages["about-me"]}</ActiveLink>
             <ActiveLink href={`/${lang}/projects`}>{dictionary.pages.projects}</ActiveLink>
