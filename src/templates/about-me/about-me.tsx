@@ -1,8 +1,7 @@
 import { Locale } from "@/i18n-config";
-import { ProjectsList } from './components';
 import { getDictionary } from "@/get-dictionary";
 
-export const Projects = async (props: {
+export const AboutMe = async (props: {
   lang: Locale
 }) => {
   const { lang } = props;
@@ -16,7 +15,7 @@ export const Projects = async (props: {
           <div className="container space-y-6 flex flex-col items-start justify-between md:flex-row md:items-end lg:items-end">
             <div className="md:px-0">
               <h1 className="text-balance text-start md:text-left text-heading-lg md:text-heading-xl max-w-2xl text-blue-300">
-                {dictionary.pages.projects}
+                {dictionary.pages["about-me"]}
               </h1>
             </div>
           </div>
@@ -24,7 +23,7 @@ export const Projects = async (props: {
 
       </header>
       <div className="container space-y-8 mx-auto max-w-7xl px-4 sm:px-6 ls:px-8">
-        <ProjectsList />
+        {/**About Me */}
       </div>
     </div>
   );

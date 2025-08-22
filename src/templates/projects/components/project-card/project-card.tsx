@@ -15,7 +15,7 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div
-      className="w-full max-w-2xl rounded-[12px] border-[1px] border-gray-400 bg-gray-600 overflow-hidden transition-all duration-300 hover:border-[1px] hover:border-blue-300"
+      className="w-full max-w-2xl rounded-[12px] border-[1px] border-secondary-200 bg-secondary-200 overflow-hidden transition-all duration-300 hover:border-[1px] hover:border-blue-200"
     >
       {/* Post Content */}
       <div className="p-2 rounded-md overflow-hidden">
@@ -32,21 +32,21 @@ export const ProjectCard = ({
 
         {/* Post info */}
         <div className="px-2 my-4 space-y-4">
-          <h2 className="text-heading-sm text-gray-100 line-clamp-3">
+          <h2 className="text-heading-sm text-secondary-100 line-clamp-3">
             {title}
           </h2>
 
-          <p className="text-gray-300 text-body-sm line-clamp-3">
+          <p className="text-secondary-100 text-body-sm line-clamp-3">
             {description}
           </p>
         </div>
 
         {/* Post footer */}
-        <div className="flex items-center gap-1 border-t border-gray-400 py-4">
+        <div className="flex items-center gap-1 border-t border-secondary-100 py-4">
           {
             tools.map((tool) => (
               <Image
-                src={`/${tool}.svg`}
+                src={`/assets/tools/${tool}.svg`}
                 alt={tool}
                 width={32}
                 height={32}

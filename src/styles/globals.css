@@ -40,9 +40,10 @@
   --text-heading-hg--font-weight: 400;
   --text-headinghg--font-family: "Montserrat";
 
-  --text-heading-xl: 32px;
+  --text-heading-xl: 45px;
   --text-heading-xl--line-height: 120%;
-  --text-heading-xl--font-weight: 700;
+  --text-heading-xl--font-weight: 400;
+  --text-headinghg--font-family: "Montserrat";
 
   --text-heading-lg: 28px;
   --text-heading-lg--line-height: 120%;

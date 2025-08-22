@@ -8,31 +8,19 @@ export const ProjectsList = () => {
     <ProjectGridCard>
       <ProjectCard
         title='test'
-        image="/logo.svg"
+        image="/assets/project-image.png"
         description={descriptionMock}
         tools={toolsMock}
       />
       <ProjectCard
         title='test'
-        image="/logo.svg"
+        image="/assets/project-image.png"
         description={descriptionMock}
         tools={toolsMock}
       />
       <ProjectCard
         title='test'
-        image="/logo.svg"
-        description={descriptionMock}
-        tools={toolsMock}
-      />
-      <ProjectCard
-        title='test'
-        image="/logo.svg"
-        description={descriptionMock}
-        tools={toolsMock}
-      />
-      <ProjectCard
-        title='test'
-        image="/logo.svg"
+        image="/assets/project-image.png"
         description={descriptionMock}
         tools={toolsMock}
       />

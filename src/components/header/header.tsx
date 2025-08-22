@@ -17,9 +17,9 @@ export const Header = async (props: {
           <Logo homeLink={`/${lang}`} />
 
           <nav className="flex items-center gap-6">
-            <ActiveLink href={`/${lang}`}>{dictionary.header.home}</ActiveLink>
-            <ActiveLink href={`/${lang}/about-me`}>{dictionary.header["about-me"]}</ActiveLink>
-            <ActiveLink href={`/${lang}/projects`}>{dictionary.header.projects}</ActiveLink>
+            <ActiveLink href={`/${lang}`}>{dictionary.pages.home}</ActiveLink>
+            <ActiveLink href={`/${lang}/about-me`}>{dictionary.pages["about-me"]}</ActiveLink>
+            <ActiveLink href={`/${lang}/projects`}>{dictionary.pages.projects}</ActiveLink>
             <LocaleSwitcher />
           </nav>
         </div>

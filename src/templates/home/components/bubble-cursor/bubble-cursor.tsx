@@ -44,7 +44,7 @@ export const BubbleCursor = ({ blobType = 'circle', fillColor = '#fegefe' }) => 
   }, [updatePosition]);
 
   return (
-    <div className='container '>
+    <div className='container hidden md:block'>
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id='blob'>
           <feGaussianBlur in='SourceGraphic' result='blur' stdDeviation='30' />

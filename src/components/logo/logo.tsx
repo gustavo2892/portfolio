@@ -6,7 +6,13 @@ export const Logo = (props: { homeLink: string }) => {
 
   return (
     <Link href={homeLink ?? ''} title="Página inicial">
-      <Image src="/logo.svg" alt="Logo site" width={136} height={32} />
+      <Image
+        src="/logo.svg"
+        alt="Logo site"
+        width={136}
+        height={32}
+        className="hover:opacity-80"
+      />
     </Link>
   );
 };

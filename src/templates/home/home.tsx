@@ -12,8 +12,8 @@ export const Home = async (props: {
 
   return (
     <section className="container flex items-center justify-center mt-16">
-      <div className="flex flex-col items-center justify-center min-h-[30rem] md:h-[36rem]">
-        <h1 className="text-blue-300 text-heading-hg font-mont" dangerouslySetInnerHTML={heroTitle} />
+      <div className="flex flex-col text-center md:text-left items-center justify-center min-h-[30rem] md:h-[36rem]">
+        <h1 className="text-blue-300 text-heading-xl sm:text-heading-hg" dangerouslySetInnerHTML={heroTitle} />
       </div>
     </section>
   );
