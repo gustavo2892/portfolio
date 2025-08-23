@@ -3,6 +3,7 @@ import { PT_Sans_Caption, Montserrat } from 'next/font/google';
 import { i18n, type Locale } from "@/i18n-config";
 import { Footer, Header, Whatsapp } from '@/components';
 import '@/styles/globals.css';
+import { getDictionary } from '@/get-dictionary';
 
 export const metadata = {
   title: "Freitas Software",
@@ -34,14 +35,14 @@ export default async function Root(props: LayoutProps) {
   const params = await props.params;
 
   const { children } = props;
-  
+
   return (
     <html lang={params.lang}>
       <body className={`${ptSansCaption.className} ${montserrat.className} relative flex min-h-screen flex-col bg-secondary-100`}>
         <Header lang={params.lang} />
         <main className="flex-1 flex flex-col mb-12">{children}</main>
         <Whatsapp />
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

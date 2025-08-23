@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
+@layer base {
+  h1, h2, h3, h4, h5, h6, a {
+    @apply select-none;
+  }
+}
+
 @theme {
   --container-center: true;
   --container-padding: 2rem;
@@ -38,13 +44,13 @@
   --text-heading-hg: 55px;
   --text-heading-hg--line-height: 120%;
   --text-heading-hg--font-weight: 400;
-  --text-headinghg--font-family: "Montserrat";
-
+  --text-heading-hg--font-family: "Montserrat";
+  
   --text-heading-xl: 45px;
   --text-heading-xl--line-height: 120%;
   --text-heading-xl--font-weight: 400;
-  --text-headinghg--font-family: "Montserrat";
-
+  --text-heading-xl--font-family: "Montserrat";
+  
   --text-heading-lg: 30px;
   --text-heading-lg--line-height: 120%;
   --text-heading-lg--font-weight: 400;
