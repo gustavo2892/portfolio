@@ -1,6 +1,11 @@
 import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import { PageSkeleton } from '@/components';
+import {
+  HeroSection,
+  FeaturesSection,
+  TechnologiesSection
+} from './components';
 
 export const AboutMe = async (props: {
   lang: Locale
@@ -11,7 +16,9 @@ export const AboutMe = async (props: {
 
   return (
     <PageSkeleton title={dictionary.pages["about-me"]}>
-      <div />
+      <HeroSection />
+      <TechnologiesSection />
+      <FeaturesSection />
     </PageSkeleton>
   );
 }

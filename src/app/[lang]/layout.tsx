@@ -3,7 +3,6 @@ import { PT_Sans_Caption, Montserrat } from 'next/font/google';
 import { i18n, type Locale } from "@/i18n-config";
 import { Footer, Header, Whatsapp } from '@/components';
 import '@/styles/globals.css';
-import { getDictionary } from '@/get-dictionary';
 
 export const metadata = {
   title: "Freitas Software",
