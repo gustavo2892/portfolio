@@ -27,8 +27,8 @@ export const FeaturesSection = ({
               {dictionary['clean-code'].description}
             </p>
           </div>
-          <div className="flex flex-col text-left gap-2 rounded-lg p-6 md:p-12 bg-secondary-150">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary-200 mb-4">
+          <div className="flex flex-col text-left gap-2 rounded-lg p-6 md:p-12 bg-blue-300">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-400 mb-4">
               <TabletSmartphone className="h-6 w-6 text-white" />
             </div>
             <strong className="text-heading-sm text-white">

@@ -50,7 +50,7 @@ export const TechnologiesSection = ({
                 <strong className="text-heading-sm text-gray-100">
                   {dictionary['agile-methodologies'].title}
                 </strong>
-                <p className="text-body-sm text-gray-200">
+                <p className="text-body-sm text-white">
                   {dictionary['agile-methodologies'].description}
                 </p>
               </div>
@@ -61,7 +61,7 @@ export const TechnologiesSection = ({
                 <strong className="text-heading-sm text-gray-100">
                   {dictionary['ci-cd-pipeline'].title}
                 </strong>
-                <p className="text-body-sm text-gray-200">
+                <p className="text-body-sm text-white">
                   {dictionary['ci-cd-pipeline'].description}
                 </p>
               </div>

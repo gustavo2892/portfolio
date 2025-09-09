@@ -32,7 +32,7 @@ export const ProjectCard = ({
             {title}
           </h2>
 
-          <p className="text-white text-body-sm line-clamp-3">
+          <p className="text-secondary-100 text-body-sm line-clamp-3">
             {description}
           </p>
         </div>
