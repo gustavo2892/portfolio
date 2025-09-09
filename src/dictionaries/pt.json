@@ -1,10 +1,38 @@
 {
+  "about-me": {
+    "first": "Olá, sou Gustavo, e trabalho como desenvolvedor desde 2018. Atualmente sou desenvolvedor front-end com foco em React, mas também tenho uma breve experiência no back-end com Node e no mobile com React-Native.",
+    "second": "Acredito ter como principais pontos fortes o trabalho em equipe, pois a colaboração é essencial para alcançar os melhores resultados tanto no produto final, como no desenvolvimento da equipe como um todo.",
+    "third": "Também tenho foco na experiência do usuário final, garantindo que cada aplicação seja entregue respeitando os requisitos, com foco na experiência simples e eficiente de usar. Estou sempre em busca de evoluir minhas habilidades, acompanhar as tendências do mercado e criar soluções que entreguem valor ao usuário final."
+  },
+  "agile-methodologies": {
+    "title": "Metodologias Ágeis",
+    "description": "Vivência com times e processos ágeis (Scrum, Kanban, etc)"
+  },
+  "ci-cd-pipeline": {
+    "title": "Esteira CI/CD",
+    "description": "Vivência com processos automatizados para otimizar o ciclo de desenvolvimento de software."
+  },
+  "clean-code": {
+    "title": "Clean Code",
+    "description": "Práticas de código a legibilidade, manutenção e escalabilidade do código."
+  },
+  "code-quality": "Qualidade de Código",
+  "curriculum": "Currículo",
+  "hero-section": {
+    "title": "Olá! Sou o <b>Gustavo</b>, <br/>desenvolvedor <i>front-end.</i>"
+  },
   "pages": {
     "home": "Início",
     "projects": "Projetos",
     "about-me": "Sobre mim"
   },
-  "hero-section": {
-    "title": "Olá! Sou o <b>Gustavo</b>, <br/>desenvolvedor <i>front-end.</i>"
+  "responsiveness": {
+    "title": "Responsividade",
+    "description": "Melhor experiência do usuário em todos os dispositivos e qualidade para SEO."
+  },
+  "technologies": "tecnologias",
+  "unit-tests": {
+    "title": "Testes Unitários",
+    "description": "Para detecção precoce de bugs, o que agiliza a depuração e reduz custos."
   }
 }

@@ -33,6 +33,8 @@
 
   --color-secondary-100: #EACDC2;
   --color-secondary-200: #B75D69;
+  --color-secondary-150: #ba8a92;
+  --color-secondary-250: #774c60;
 
   --radius-lg: 0.5rem;
   --radius-md: calc(0.5rem - 2px);

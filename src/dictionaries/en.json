@@ -1,10 +1,38 @@
 {
+  "about-me": {
+    "first": "Hi, I'm Gustavo, and I've been working as a developer since 2018. I'm currently a front-end developer focusing on React, but I also have some experience in the back-end with Node and in mobile with React-Native.",
+    "second": "I believe my main strengths are teamwork, as collaboration is essential to achieving the best results both in the final product and in the development of the team as a whole.",
+    "third": "I also focus on the end-user experience, ensuring that each application is delivered according to requirements, focusing on a simple and efficient user experience. I'm always striving to develop my skills, keep up with market trends, and create solutions that deliver value to the end user."
+  },
+  "agile-methodologies": {
+    "title": "Agile Methodologies",
+    "description": "Experience with agile teams and processes (Scrum, Kanban, etc.)"
+  },
+  "ci-cd-pipeline": {
+    "title": "CI/CD Pipeline",
+    "description": "Experience with automated processes to optimize the software development cycle."
+  },
+  "clean-code": {
+    "title": "Clean Code",
+    "description": "Code practices for code readability, maintainability, and scalability."
+  },
+  "code-quality": "Code Quality",
+  "curriculum": "Curriculum",
+  "hero-section": {
+    "title": "Hello! I'm <b>Gustavo</b>, <br/>a <i>front-end</i> developer."
+  },
   "pages": {
     "home": "Home",
     "projects": "Projects",
     "about-me": "About me"
   },
-  "hero-section": {
-    "title": "Hello! I'm <b>Gustavo</b>, <br/>a <i>front-end</i> developer."
+  "responsiveness": {
+    "title": "Responsiveness",
+    "description": "Better user experience across all devices and quality for SEO."
+  },
+  "technologies": "technologies",
+  "unit-tests": {
+    "title": "Unit Tests",
+    "description": "For early bug detection, which speeds up debugging and reduces costs."
   }
 }

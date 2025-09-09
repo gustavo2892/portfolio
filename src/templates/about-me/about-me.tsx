@@ -16,9 +16,9 @@ export const AboutMe = async (props: {
 
   return (
     <PageSkeleton title={dictionary.pages["about-me"]}>
-      <HeroSection />
-      <TechnologiesSection />
-      <FeaturesSection />
+      <HeroSection dictionary={dictionary} />
+      <TechnologiesSection dictionary={dictionary} />
+      <FeaturesSection dictionary={dictionary} />
     </PageSkeleton>
   );
 }
