@@ -11,7 +11,7 @@ export const Projects = async (props: {
   const dictionary = await getDictionary(lang);
 
   return (
-    <PageSkeleton title={dictionary.pages.projects}>
+    <PageSkeleton title={`${dictionary.pages.projects} (${dictionary["in-progress"].toLowerCase()})`}>
       <ProjectsList />
     </PageSkeleton>
   );

@@ -21,6 +21,7 @@
   "hero-section": {
     "title": "Olá! Sou o <b>Gustavo</b>, <br/>desenvolvedor <i>front-end.</i>"
   },
+  "in-progress": "Em Andamento",
   "pages": {
     "home": "Início",
     "projects": "Projetos",
