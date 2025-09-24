@@ -35,10 +35,10 @@ export const TechnologiesSection = ({
               asChild
               className="w-fit rounded-full hidden mt-4 md:mt-auto md:flex cursor-pointer"
             >
-              <div>
+              <a href="/gustavo_freitas_cv.pdf" download>
                 {dictionary.curriculum}
                 <Download />
-              </div>
+              </a>
             </Button>
           </div>
           <div className="flex flex-col items-center justify-center w-full">
@@ -70,10 +70,10 @@ export const TechnologiesSection = ({
               asChild
               className="w-full gap-2 rounded-full mt-4 md:mt-auto md:hidden"
             >
-              <div>
+              <a href="/gustavo_freitas_cv.pdf" download>
                 {dictionary.curriculum}
                 <Download />
-              </div>
+              </a>
             </Button>
           </div>
         </div>
