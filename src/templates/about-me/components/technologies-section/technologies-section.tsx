@@ -8,7 +8,7 @@ export const TechnologiesSection = ({
   dictionary: Dictionary,
 }) => {
   return (
-    <section className="container pb-8 pt-8 md:py-10">
+    <section className="container pb-8 pt-8 md:pt-0">
       <div className="col-span-full flex flex-col gap-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 rounded-lg bg-secondary-150 p-6 md:p-12">
           <div className="flex flex-col gap-4">
