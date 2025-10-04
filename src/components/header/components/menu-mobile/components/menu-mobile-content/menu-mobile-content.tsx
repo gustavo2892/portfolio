@@ -56,7 +56,7 @@ export const MenuMobileContent = () => {
         <div className="flex flex-col h-80 justify-center items-center gap-y-6">
           <ActiveLinkMobile href={`/${lang}`}>{dictionary.pages.home}</ActiveLinkMobile>
           <ActiveLinkMobile href={`/${lang}/about-me`}>{dictionary.pages["about-me"]}</ActiveLinkMobile>
-          <ActiveLinkMobile href={`/${lang}/projects`}>{dictionary.pages.projects}</ActiveLinkMobile>
+          {/*<ActiveLinkMobile href={`/${lang}/projects`}>{dictionary.pages.projects}</ActiveLinkMobile>*/}
           <LocaleSwitcherMobile />
         </div>
       </DrawerContent>
