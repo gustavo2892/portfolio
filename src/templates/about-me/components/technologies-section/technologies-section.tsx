@@ -1,11 +1,14 @@
 import { Activity, Download, SendToBack } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dictionary } from '@/get-dictionary';
+import { Locale } from "@/i18n-config";
 
 export const TechnologiesSection = ({
   dictionary,
+  lang,
 }: {
   dictionary: Dictionary,
+  lang: Locale
 }) => {
   return (
     <section className="container pb-8 pt-8 md:pt-0">
@@ -27,6 +30,7 @@ export const TechnologiesSection = ({
               <li>Tailwind/Styled-Components</li>
               <li>Ant-Design/Chakra-UI/Material-UI/Shadcn</li>
               <li>Storybook</li>
+              <li>React-Query/RTK Query</li>
               <li>Nodejs</li>
               <li>React Native</li>
             </ul>
@@ -35,7 +39,7 @@ export const TechnologiesSection = ({
               asChild
               className="w-fit rounded-full hidden mt-4 md:mt-auto md:flex cursor-pointer"
             >
-              <a href="/gustavo_freitas_cv.pdf" download>
+              <a href={`/${lang}_gustavo_freitas_cv.pdf`} download>
                 {dictionary.curriculum}
                 <Download />
               </a>
@@ -70,7 +74,7 @@ export const TechnologiesSection = ({
               asChild
               className="w-full gap-2 rounded-full mt-4 md:mt-auto md:hidden"
             >
-              <a href="/gustavo_freitas_cv.pdf" download>
+              <a href={`/${lang}_gustavo_freitas_cv.pdf`} download>
                 {dictionary.curriculum}
                 <Download />
               </a>
