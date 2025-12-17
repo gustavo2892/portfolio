@@ -1,6 +1,6 @@
-import { cn } from '@/lib/utils';
-import Image from 'next/image';
-import Link from 'next/link';
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 
 type LogoProps = {
   homeLink?: string;
@@ -9,9 +9,9 @@ type LogoProps = {
 };
 
 export const Logo = ({
-  homeLink = '',
+  homeLink = "",
   height = 32,
-  width = 136
+  width = 136,
 }: LogoProps) => {
   const logoComponent = () => {
     return (
@@ -20,9 +20,8 @@ export const Logo = ({
         alt="Logo site"
         width={width}
         height={height}
-        className={cn(
-          homeLink ? 'hover:opacity-80' : ''
-        )}
+        unoptimized
+        className={cn(homeLink ? "hover:opacity-80" : "")}
       />
     );
   };

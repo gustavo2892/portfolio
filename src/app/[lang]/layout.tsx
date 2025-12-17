@@ -1,6 +1,6 @@
 import { PT_Sans_Caption, Montserrat } from "next/font/google";
 
-import { i18n, type Locale } from "@/i18n-config";
+import { i18n } from "@/i18n-config";
 import { Footer, Header, Whatsapp } from "@/components";
 import "@/styles/globals.css";
 

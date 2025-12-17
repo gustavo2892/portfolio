@@ -1,11 +1,7 @@
-import { Dictionary } from '@/get-dictionary';
-import Image from 'next/image';
+import { Dictionary } from "@/get-dictionary";
+import Image from "next/image";
 
-export const HeroSection = ({
-  dictionary,
-}: {
-  dictionary: Dictionary,
-}) => {
+export const HeroSection = ({ dictionary }: { dictionary: Dictionary }) => {
   return (
     <section className="container relative flex items-start justify-start">
       <div className="flex md:grid md:grid-cols-2 gap-1 min-h-[20rem] md:h-[33rem] lg:h-[24rem] xl:h-[20rem] flex-col">
@@ -26,6 +22,7 @@ export const HeroSection = ({
             width={150}
             height={150}
             className="w-auto object-contain rounded-[2.5rem] md:rounded-full"
+            unoptimized
           />
         </div>
       </div>

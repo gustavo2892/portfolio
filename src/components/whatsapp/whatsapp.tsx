@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export const Whatsapp = () => {
   return (
@@ -7,13 +7,19 @@ export const Whatsapp = () => {
         <span className="absolute h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
         <span className="relative rounded-full bg-transparent">
           <a
-            href={'https://api.whatsapp.com/send?phone=5519920002175&text='}
+            href={"https://api.whatsapp.com/send?phone=5519920002175&text="}
             target="_blank"
           >
-            <Image src="/whatsapp.png" alt="whatsapp" width={80} height={32} />
+            <Image
+              src="/whatsapp.png"
+              alt="whatsapp"
+              width={80}
+              height={32}
+              unoptimized
+            />
           </a>
         </span>
       </span>
     </div>
   );
-}
+};
