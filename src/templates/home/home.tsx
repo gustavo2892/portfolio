@@ -1,9 +1,7 @@
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
-export const Home = async (props: {
-  lang: Locale
-}) => {
+export const Home = async (props: { lang: Locale }) => {
   const { lang } = props;
 
   const dictionary = await getDictionary(lang);
@@ -11,10 +9,13 @@ export const Home = async (props: {
   const heroTitle = { __html: `${dictionary["hero-section"].title}` };
 
   return (
-    <section className="container flex items-center justify-center mt-16">
+    <section className="container flex items-center justify-center mt-16 max-md:max-h-screen max-md:mt-24">
       <div className="flex flex-col text-center md:text-left items-center justify-center min-h-[30rem] md:h-[36rem]">
-        <h1 className="text-blue-300 text-heading-xl sm:text-heading-hg" dangerouslySetInnerHTML={heroTitle} />
+        <h1
+          className="text-blue-300 text-heading-xl sm:text-heading-hg"
+          dangerouslySetInnerHTML={heroTitle}
+        />
       </div>
     </section>
   );
-}
+};
