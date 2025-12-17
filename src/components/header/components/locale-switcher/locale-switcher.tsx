@@ -31,7 +31,6 @@ export const LocaleSwitcher = () => {
           alt="Logo site"
           width={22}
           height={16}
-          unoptimized
         />
         {currentLocale?.toLocaleUpperCase()}
       </DropdownMenuTrigger>
@@ -55,7 +54,6 @@ export const LocaleSwitcher = () => {
                   alt="Logo site"
                   width={18}
                   height={16}
-                  unoptimized
                 />
                 {locale?.toLocaleUpperCase()}
               </Link>

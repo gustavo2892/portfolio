@@ -22,7 +22,6 @@ export const HeroSection = ({ dictionary }: { dictionary: Dictionary }) => {
             width={150}
             height={150}
             className="w-auto object-contain rounded-[2.5rem] md:rounded-full"
-            unoptimized
           />
         </div>
       </div>

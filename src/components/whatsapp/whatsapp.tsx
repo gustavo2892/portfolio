@@ -10,13 +10,7 @@ export const Whatsapp = () => {
             href={"https://api.whatsapp.com/send?phone=5519920002175&text="}
             target="_blank"
           >
-            <Image
-              src="/whatsapp.png"
-              alt="whatsapp"
-              width={80}
-              height={32}
-              unoptimized
-            />
+            <Image src="/whatsapp.png" alt="whatsapp" width={80} height={32} />
           </a>
         </span>
       </span>

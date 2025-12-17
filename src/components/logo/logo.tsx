@@ -20,7 +20,6 @@ export const Logo = ({
         alt="Logo site"
         width={width}
         height={height}
-        unoptimized
         className={cn(homeLink ? "hover:opacity-80" : "")}
       />
     );
