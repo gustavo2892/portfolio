@@ -1,29 +1,22 @@
-import { ProjectCard, ProjectGridCard } from '../';;
+import { Dictionary } from "@/get-dictionary";
+import { ProjectCard, ProjectGridCard } from "../";
+import { PROJECTS_DATA } from "./projects_data";
 
-const descriptionMock = 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.';
-const toolsMock = ['react', 'nodejs', 'redux', 'vuejs', 'angular']
-
-export const ProjectsList = () => {
-  return(
+export const ProjectsList = ({ dictionary }: { dictionary: Dictionary }) => {
+  return (
     <ProjectGridCard>
-      <ProjectCard
-        title='test'
-        image="/assets/project-image.png"
-        description={descriptionMock}
-        tools={toolsMock}
-      />
-      <ProjectCard
-        title='test'
-        image="/assets/project-image.png"
-        description={descriptionMock}
-        tools={toolsMock}
-      />
-      <ProjectCard
-        title='test'
-        image="/assets/project-image.png"
-        description={descriptionMock}
-        tools={toolsMock}
-      />
+      {PROJECTS_DATA.map((project) => {
+        return (
+          <ProjectCard
+            projectName={project.projectName}
+            image={project.image}
+            link={project.link}
+            key={project.projectName}
+            dictionary={dictionary}
+            tools={project.tools}
+          />
+        );
+      })}
     </ProjectGridCard>
   );
-}
+};

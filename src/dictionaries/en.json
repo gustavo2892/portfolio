@@ -27,6 +27,16 @@
     "projects": "Projects",
     "about-me": "About me"
   },
+  "projects": {
+    "petshop": {
+      "title": "Pet Shop Schedule",
+      "description": "The application consists of a scheduling system for a Pet Shop, allowing users to create, edit, and remove appointments."
+    },
+    "task-list": {
+      "title": "Tasks Management",
+      "description": "This application was developed to practice and demonstrate the use of drag and drop in front-end development using the Dnd Kit library, in conjunction with React and Vite."
+    }
+  },
   "responsiveness": {
     "title": "Responsiveness",
     "description": "Better user experience across all devices and quality for SEO."

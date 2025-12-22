@@ -27,6 +27,16 @@
     "projects": "Projetos",
     "about-me": "Sobre mim"
   },
+  "projects": {
+    "petshop": {
+      "title": "Agendamento Pet Shop",
+      "description": "A aplicação consiste em um sistema de agendamentos para um Pet Shop, permitindo criar, editar e remover agendamentos."
+    },
+    "task-list": {
+      "title": "Gerenciamento de Tarefas",
+      "description": "Aplicação desenvolvida para praticar e demonstrar o uso de Drag and Drop no front-end utilizando a biblioteca Dnd Kit, em conjunto com React e Vite"
+    }
+  },
   "responsiveness": {
     "title": "Responsividade",
     "description": "Melhor experiência do usuário em todos os dispositivos e qualidade para SEO."

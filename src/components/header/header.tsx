@@ -19,7 +19,9 @@ export const Header = async (props: { lang: string }) => {
             <ActiveLink href={`/${lang}/about-me`}>
               {dictionary.pages["about-me"]}
             </ActiveLink>
-            {/*<ActiveLink href={`/${lang}/projects`}>{dictionary.pages.projects}</ActiveLink>*/}
+            <ActiveLink href={`/${lang}/projects`}>
+              {dictionary.pages.projects}
+            </ActiveLink>
             <LocaleSwitcher />
           </nav>
 
