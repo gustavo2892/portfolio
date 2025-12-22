@@ -14,7 +14,7 @@ export const ProjectCard = ({
   tools,
 }: ProjectCardProps) => {
   return (
-    <div className="w-full max-w-2xl rounded-[12px] border-[1px] border-secondary-150 bg-secondary-150 overflow-hidden transition-all duration-300 hover:border-[1px] hover:border-blue-200">
+    <div className="w-full max-w-2xl rounded-[12px] border-[1px] border-secondary-150 bg-secondary-150 overflow-hidden transition-all duration-300 hover:border-[1px]">
       <div className="p-2 rounded-md overflow-hidden">
         <div className="relative">
           <Image
