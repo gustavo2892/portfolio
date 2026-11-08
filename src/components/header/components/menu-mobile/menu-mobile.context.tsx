@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState, createContext, useContext, Dispatch, SetStateAction } from "react";
-import { useWindowSize } from '@/hooks';
 
 type MenuMobileContextProps = {
   showMenu: boolean;
@@ -23,16 +22,25 @@ const contextPropsDefault = {
 const MenuMobileContext = createContext<MenuMobileContextProps>(contextPropsDefault);
 
 const breakPointMobile = 768;
+const desktopMediaQuery = `(min-width: ${breakPointMobile}px)`;
 
 export const MenuMobileProvider = ({ children }: MenuMobileProviderProps) => {
   const [showMenu, setShowMenu] = useState(false);
-  const { width } = useWindowSize();
 
+  // Fecha o menu quando a janela cruza para o layout desktop (>= 768px).
   useEffect(() => {
-    if (width && width >= breakPointMobile && showMenu) {
-      setShowMenu(false);
-    }
-  }, [showMenu, width]);
+    const mediaQuery = window.matchMedia(desktopMediaQuery);
+
+    const handleChange = (event: MediaQueryListEvent) => {
+      if (event.matches) {
+        setShowMenu(false);
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
   const closeMenu = () => setShowMenu(false);
 
