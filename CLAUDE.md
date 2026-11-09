@@ -8,7 +8,7 @@ Portfólio pessoal de Gustavo Freitas ("Freitas Software"), bilíngue (pt/en), e
 - **Tailwind CSS v4**: tema definido via `@theme` em `src/styles/globals.css` (não existe `tailwind.config`)
 - **shadcn/ui** (Radix + `class-variance-authority`), `vaul` (drawer), `lucide-react` (ícones)
 - `@react-spring/web` (apenas no `BubbleCursor` da home)
-- i18n próprio: `negotiator` + `@formatjs/intl-localematcher` no `middleware.ts`
+- i18n próprio: `negotiator` + `@formatjs/intl-localematcher` no `src/proxy.ts` (convenção `proxy` do Next 16, sempre em runtime Node.js; não declare `runtime` nesse arquivo)
 - Gerenciador de pacotes: **pnpm** (`pnpm-lock.yaml`)
 
 Não há: APIs/rotas de API, variáveis de ambiente, formulários, biblioteca de validação, estado global (só React Context) nem testes automatizados.
@@ -29,8 +29,8 @@ Não há scripts `lint`, `typecheck` ou `test` no `package.json`; use os comando
 ## Estrutura
 
 ```
-middleware.ts            # redireciona "/" e rotas sem idioma para /{locale}
 src/
+├─ proxy.ts              # redireciona "/" e rotas sem idioma para /{locale} (fica no mesmo nível de app/)
 ├─ app/
 │  ├─ layout.tsx         # root layout (apenas importa globals.css)
 │  ├─ page.tsx           # fallback que redireciona para /pt
@@ -109,8 +109,6 @@ Nova página = `app/[lang]/<rota>/page.tsx` + `templates/<rota>/` + export em `t
 
 ## Problemas conhecidos (não corrigir sem pedido)
 
-- `eslint-config-next` em 15.x enquanto o Next está em 16.
-- `middleware.ts` usa a convenção antiga (no Next 16 o nome novo é `proxy.ts`).
 - `components.json` referencia `tailwind.config.js` inexistente.
 - Classe inválida `ls:px-8` (deveria ser `lg:px-8`) no `Header` e no `PageSkeleton`.
 - `getDictionary` usa `en` como fallback, embora o padrão seja `pt`.

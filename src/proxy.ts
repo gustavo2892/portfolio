@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-import { i18n } from "./src/i18n-config";
+import { i18n } from "@/i18n-config";
 
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
@@ -12,8 +12,8 @@ function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
-  // @ts-expect-error locales are readonly
-  const locales: string[] = i18n.locales;
+  // Negotiator e matchLocale esperam um array mutável de strings
+  const locales: string[] = [...i18n.locales];
 
   // Use negotiator and intl-localematcher to get best locale
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
@@ -25,7 +25,7 @@ function getLocale(request: NextRequest): string | undefined {
   return locale;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   if (
@@ -46,7 +46,7 @@ export function middleware(request: NextRequest) {
     const locale = getLocale(request);
 
     // e.g. incoming request is /products
-    // The new URL is now /en-US/products
+    // The new URL is now /pt/products
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
