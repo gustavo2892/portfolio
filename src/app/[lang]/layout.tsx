@@ -9,6 +9,9 @@ export const metadata = {
   description: "Portfolio",
 };
 
+// Apenas os idiomas de generateStaticParams são válidos; qualquer outro valor de [lang] retorna 404
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }

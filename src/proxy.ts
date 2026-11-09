@@ -12,8 +12,12 @@ function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
-  // Negotiator e matchLocale esperam um array mutável de strings
-  const locales: string[] = [...i18n.locales];
+  // Idioma padrão primeiro: sem Accept-Language (ou com "*") o Negotiator
+  // considera todos os idiomas iguais e devolve a ordem desta lista
+  const locales: string[] = [
+    i18n.defaultLocale,
+    ...i18n.locales.filter((locale) => locale !== i18n.defaultLocale),
+  ];
 
   // Use negotiator and intl-localematcher to get best locale
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
@@ -45,18 +49,18 @@ export function proxy(request: NextRequest) {
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
 
+    // Remove barras finais para não gerar um segundo redirecionamento (ex.: "/" -> "/pt/" -> "/pt")
+    const normalizedPathname = pathname.replace(/\/+$/, "");
+
     // e.g. incoming request is /products
     // The new URL is now /pt/products
     return NextResponse.redirect(
-      new URL(
-        `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
-        request.url
-      )
+      new URL(`/${locale}${normalizedPathname}`, request.url)
     );
   }
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  // Matcher ignoring `/_next/`, `/api/` and the generated favicon (exact `/icon`, from app/icon.tsx)
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|icon$).*)"],
 };
