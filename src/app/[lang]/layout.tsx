@@ -1,11 +1,18 @@
 import { PT_Sans_Caption, Montserrat } from "next/font/google";
 
+import type { Metadata } from "next";
+
 import { i18n } from "@/i18n-config";
+import { AUTHOR_NAME, SITE_URL } from "@/lib/seo";
 import { Footer, Header, Whatsapp } from "@/components";
 import "@/styles/globals.css";
 
-export const metadata = {
-  title: "Freitas Software",
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: AUTHOR_NAME,
+    template: `%s | ${AUTHOR_NAME}`,
+  },
   description: "Portfolio",
 };
 

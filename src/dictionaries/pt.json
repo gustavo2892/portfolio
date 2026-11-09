@@ -41,6 +41,21 @@
     "title": "Responsividade",
     "description": "Melhor experiência do usuário em todos os dispositivos e qualidade para SEO."
   },
+  "seo": {
+    "image-alt": "Página inicial do portfólio de Gustavo Freitas, desenvolvedor front-end.",
+    "home": {
+      "title": "Desenvolvedor Front-end",
+      "description": "Portfólio de Gustavo Freitas, desenvolvedor front-end com foco em React. Conheça minha experiência, as tecnologias que utilizo e meus projetos."
+    },
+    "about-me": {
+      "title": "Sobre mim",
+      "description": "Desenvolvedor desde 2018, hoje focado em front-end com React. Conheça minha trajetória, as tecnologias que utilizo e baixe meu currículo."
+    },
+    "projects": {
+      "title": "Projetos",
+      "description": "Projetos de Gustavo Freitas com React: um sistema de agendamento para pet shop com Next.js e um gerenciador de tarefas com drag and drop."
+    }
+  },
   "technologies": "tecnologias",
   "unit-tests": {
     "title": "Testes Unitários",

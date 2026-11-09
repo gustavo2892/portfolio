@@ -41,6 +41,21 @@
     "title": "Responsiveness",
     "description": "Better user experience across all devices and quality for SEO."
   },
+  "seo": {
+    "image-alt": "Homepage of Gustavo Freitas's portfolio, front-end developer.",
+    "home": {
+      "title": "Front-end Developer",
+      "description": "Portfolio of Gustavo Freitas, a front-end developer focused on React. Explore my experience, the technologies I work with and my projects."
+    },
+    "about-me": {
+      "title": "About Me",
+      "description": "Developer since 2018, now focused on front-end with React. Learn about my background and the technologies I use, and download my résumé."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Projects by Gustavo Freitas built with React: a pet shop scheduling app using Next.js and a drag-and-drop task manager made with Vite."
+    }
+  },
   "technologies": "technologies",
   "unit-tests": {
     "title": "Unit Tests",
